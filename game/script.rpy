@@ -26,6 +26,9 @@ default sox.affection = 10
 define character.neil = Character("Neil (he/him)", image="neil")
 default neil.affection = 10
 
+# Placeholder for unkown speaker
+define character.unkown = Character("???")
+
 # Declare variables used here.
 default pc.name = "Player Character"
 default pc.nickname = "PC"
@@ -70,7 +73,7 @@ label start:
 
     #emily "[pc.name] created a new Ren'Py game."
     #emily happy "Once [pc.nickname] adds a story, pictures, and music, [pc.objPronoun] can release it to the world!"
-    jump chapter1
+    jump chapter2a
 
     # This ends the game.
 
