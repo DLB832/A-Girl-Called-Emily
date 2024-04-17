@@ -7,5 +7,5 @@
 # what dates to go in and what order to go in them.
 label chapter2:
     '[get_day(date)]' 
-
+    
 return
