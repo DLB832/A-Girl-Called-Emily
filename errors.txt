@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/testspace.rpy", line 9: expected statement.
+    get_day(date)
+                 ^
+
+Ren'Py Version: Ren'Py 8.2.1.24030407
+Wed Apr 17 15:07:54 2024
