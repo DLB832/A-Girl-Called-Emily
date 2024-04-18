@@ -1,22 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/chapter2a.rpy", line 61, in script
-    jump ch2a_005
-ScriptError: could not find label 'ch2a_005'.
+  File "game/chapter2a.rpy", line 132, in script
+    jump cha2_008
+ScriptError: could not find label 'cha2_008'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/chapter2a.rpy", line 61, in script
-    jump ch2a_005
+  File "game/chapter2a.rpy", line 132, in script
+    jump cha2_008
   File "/Users/derekcampbell/Documents/Game stuffs/renpy-8.2.1-sdk/renpy/ast.py", line 1698, in execute
     rv = renpy.game.script.lookup(target)
   File "/Users/derekcampbell/Documents/Game stuffs/renpy-8.2.1-sdk/renpy/script.py", line 1103, in lookup
     raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'ch2a_005'.
+ScriptError: could not find label 'cha2_008'.
 
 macOS-10.16-x86_64-i386-64bit x86_64
 Ren'Py 8.2.1.24030407
 A Girl Called Emily 1.0
-Wed Apr 17 17:19:58 2024
+Thu Apr 18 11:52:54 2024

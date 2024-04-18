@@ -4,6 +4,6 @@
 # Location: The Grind House
 # NPCs Present: varies
 label chapter2b:
-    '[get_day(date)]' 
+    "Neils date"
 
 return

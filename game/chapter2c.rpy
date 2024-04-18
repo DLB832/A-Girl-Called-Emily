@@ -4,6 +4,6 @@
 # Location: The Grind House
 # NPCs Present: varies
 label chapter2c:
-    '[get_day(date)]' 
+    "Z3R0's Date"
 
 return

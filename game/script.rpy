@@ -73,7 +73,7 @@ label start:
 
     #emily "[pc.name] created a new Ren'Py game."
     #emily happy "Once [pc.nickname] adds a story, pictures, and music, [pc.objPronoun] can release it to the world!"
-    jump chapter2a
+    jump chapter2
 
     # This ends the game.
 
