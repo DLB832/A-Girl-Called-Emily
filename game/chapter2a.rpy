@@ -13,7 +13,6 @@ label chapter2a:
     "Rumor around town is the owners of the bakery wanted to hop on the coffee trend, 
         but for some reason can't stand the smell. So, they bought the building right next door."
     "As such, a small collection of fresh pastry treats are always available at the Grind House."
-
     jump ch2a_001
 
 label ch2a_001:

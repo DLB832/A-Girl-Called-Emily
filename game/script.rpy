@@ -6,29 +6,29 @@
 
 # PC is the "Player Character."  
 define character.pc = Character("[pc.name]")
-
+# NOTE: who_colors assigned to characters are arbituary at the moment. Correct to go with character designs once finalized.
 # Emily Sanderson: The story's antagonist and driving force. 
-define character.emily = Character("Emily (she/her)",image="emily")
+define character.emily = Character("Emily (she/her)",image="emily", who_color="#33e7ff")
 default emily.affection = 10 # sets Emily's affection level at 10 to start.
 default emily.ch1ConversationTopics = False
 
 # Z3R0:
-define character.zero = Character("Z3R0 (she/her)", image="zero")
+define character.zero = Character("Z3R0 (she/her)", image="zero", who_color="#21b130d2")
 default zero.affection = 10
 
 # Soverign Sinclair
 define character.sox = Character("Sox", image="sox") #placeholder for affection values.
-define character.soxMasc = Character("Sox (he/him)", image="sox")
-define character.soxFem = Character("Sox (she/her)", image="sox")
-define character.soxNB = Character("Sox (they/them)", image="sox")
+define character.soxMasc = Character("Sox (he/him)", image="sox", who_color="#44256c")
+define character.soxFem = Character("Sox (she/her)", image="sox", who_color="#44256c")
+define character.soxNB = Character("Sox (they/them)", image="sox", who_color="#44256c")
 default sox.affection = 10
 
 # Neil Doubermann
-define character.neil = Character("Neil (he/him)", image="neil")
+define character.neil = Character("Neil (he/him)", image="neil", who_color="#f1ea1a")
 default neil.affection = 10
 
 # Placeholder for unkown speaker
-define character.unkown = Character("???")
+define character.unkown = Character("???", who_color="#687d7e")
 
 # Declare variables used here.
 default pc.name = "Player Character"
@@ -74,7 +74,7 @@ label start:
 
     #emily "[pc.name] created a new Ren'Py game."
     #emily happy "Once [pc.nickname] adds a story, pictures, and music, [pc.objPronoun] can release it to the world!"
-    jump chapter1
+    jump chapter2
 
     # This ends the game.
 
