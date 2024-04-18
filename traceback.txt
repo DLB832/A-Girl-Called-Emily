@@ -1,22 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/chapter2a.rpy", line 132, in script
-    jump cha2_008
-ScriptError: could not find label 'cha2_008'.
+  File "game/chapter2a.rpy", line 120, in script
+    menu smallTalkch2a7:
+  File "game/chapter2a.rpy", line 128, in <module>
+    "Tell Sox you've been getting more into instrumental music recently, and ask if they have any recommendations. " if emily.ch1ConversationTopics == True:
+AttributeError: 'StoreModule' object has no attribute 'ch1ConversationTopics'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/chapter2a.rpy", line 132, in script
-    jump cha2_008
-  File "/Users/derekcampbell/Documents/Game stuffs/renpy-8.2.1-sdk/renpy/ast.py", line 1698, in execute
-    rv = renpy.game.script.lookup(target)
-  File "/Users/derekcampbell/Documents/Game stuffs/renpy-8.2.1-sdk/renpy/script.py", line 1103, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'cha2_008'.
+  File "game/chapter2a.rpy", line 120, in script
+    menu smallTalkch2a7:
+  File "/Users/derekcampbell/Documents/Game stuffs/renpy-8.2.1-sdk/renpy/ast.py", line 1618, in execute
+    choice = renpy.exports.menu(choices, self.set, args, kwargs, item_arguments)
+  File "/Users/derekcampbell/Documents/Game stuffs/renpy-8.2.1-sdk/renpy/exports.py", line 1075, in menu
+    condition = renpy.python.py_eval(condition)
+  File "/Users/derekcampbell/Documents/Game stuffs/renpy-8.2.1-sdk/renpy/python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "/Users/derekcampbell/Documents/Game stuffs/renpy-8.2.1-sdk/renpy/python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/chapter2a.rpy", line 128, in <module>
+    "Tell Sox you've been getting more into instrumental music recently, and ask if they have any recommendations. " if emily.ch1ConversationTopics == True:
+AttributeError: 'StoreModule' object has no attribute 'ch1ConversationTopics'
 
 macOS-10.16-x86_64-i386-64bit x86_64
 Ren'Py 8.2.1.24030407
 A Girl Called Emily 1.0
-Thu Apr 18 11:52:54 2024
+Thu Apr 18 12:55:42 2024

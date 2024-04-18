@@ -125,10 +125,10 @@ label ch2a_007:
             $ sox.affection -= 1
         "Excitedly bring up the first thing that comes to your mind":
             pc "Have you seen the new episode of \"Brainchasers?\" In it they ..."
-        #TODO: add 4th option
-        #ONLY AVAILABLE IF TALKED TO EMILY Tell Sox you've been getting more into instrumental music recently, 
-        #ask if they have any recommendations.
-        #Emily affection +1; Sox affection +1
+        "Tell Sox you've been getting more into instrumental music recently, and ask if they have any recommendations. " if emily.ch1ConversationTopics == True:
+            $ emily.affection += 1
+            $ sox.affection += 1
+        #TODO: flesh out responses.
     jump ch2a_008
 
 label ch2a_008:
@@ -164,6 +164,5 @@ label ch2a_010:
         I know they get terribly bored during these weeknight shifts. Where are you going tomorrow?"
     $ ch2charMenu.add("Sox")
     jump chapter2
-    #TODO: jump to ch2 landing page. Decisions with who to hang out with are dependant on if the player
-    #has already hung out with them or not. 
+
 return

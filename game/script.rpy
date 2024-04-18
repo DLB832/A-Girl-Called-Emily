@@ -10,6 +10,7 @@ define character.pc = Character("[pc.name]")
 # Emily Sanderson: The story's antagonist and driving force. 
 define character.emily = Character("Emily (she/her)",image="emily")
 default emily.affection = 10 # sets Emily's affection level at 10 to start.
+default emily.ch1ConversationTopics = False
 
 # Z3R0:
 define character.zero = Character("Z3R0 (she/her)", image="zero")
@@ -73,7 +74,7 @@ label start:
 
     #emily "[pc.name] created a new Ren'Py game."
     #emily happy "Once [pc.nickname] adds a story, pictures, and music, [pc.objPronoun] can release it to the world!"
-    jump chapter2
+    jump chapter1
 
     # This ends the game.
 

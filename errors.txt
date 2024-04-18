@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/chapter2a.rpy", line 165: expected statement.
-    ch2charMenu.add("Sox")
-                          ^
+File "game/chapter2a.rpy", line 128: expected menuitem
+    if emily.ch1ConversationTopics == True
+    ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Thu Apr 18 11:52:09 2024
+Thu Apr 18 12:41:45 2024

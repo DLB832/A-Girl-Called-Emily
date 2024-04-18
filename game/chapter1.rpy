@@ -230,8 +230,15 @@ label ch1_013:
     $ pc.path2points += 1
     $ emily.affection += 1
     # NOTE: Emily approves of your level of caution
-    emily "Fantastic! Who do you want to meet up with first? I know their schedules by heart, 
-        so I know when they are all free."
+    emily "I totally understand feeling nervous. How about some conversation topics? 
+        It's always easier when you have something to talk about."
+    emily "Sox is a sucker for most things music, but stay away from asking them 
+        about their own performance abilities."
+    emily "Neil is a breeze to chat with, and he loves eating competitions. 
+        Be careful though, he may challenge you on the spot!"
+    emily "Z3R0's laize-faire attitude drops away the minute you bring up video games or the 
+        importance of having native plants in your yard. Pick your poison!"
+    $ emily.ch1ConversationTopics = True
     jump chapter2
 
 label ch1_014:
