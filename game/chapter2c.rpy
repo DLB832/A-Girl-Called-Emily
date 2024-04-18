@@ -6,4 +6,7 @@
 label chapter2c:
     "Z3R0's Date"
 
+    $ ch2charMenu.add("Z3R0")
+    jump chapter2
+
 return
