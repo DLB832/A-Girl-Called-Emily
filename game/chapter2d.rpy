@@ -4,6 +4,6 @@
 # Location: The Grind House
 # NPCs Present: varies
 label chapter2d:
-    '[get_day(date)]' 
+    "date 2 with Emily"
 
 return

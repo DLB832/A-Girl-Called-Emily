@@ -9,15 +9,21 @@
 default ch2charMenu = set()
 label chapter2:
     $ date += 1 
-    '[get_day(date)]' 
-    menu ch2Dates:
-        set ch2charMenu
-        "Who should I go see?"
-        "Sox":
-            jump chapter2a
-        "Neil":
-            jump chapter2b
-        "Z3R0":
-            jump chapter2c
+    '[get_day(date)]'
+    while len(ch2charMenu) < 3:
+        menu ch2Dates:
+            set ch2charMenu
+            "Who should I go see?"
+            "Sox":
+                jump chapter2a
+            "Neil":
+                jump chapter2b
+            "Z3R0":
+                jump chapter2c
+    "You've been on a date with each member of the Mystery Crew."
+    menu ch2checkin:
+        "Time to check back in with Emily":
+            jump  chapter2d
+        
     
 return
