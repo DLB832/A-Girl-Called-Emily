@@ -4,8 +4,20 @@
 # Location: varies
 # NPCs Present: varies
 # NOTE: This is the jumping off point for Chapter 2. The Player can decide on 
-# what dates to go in and what order to go in them.
+    # what dates to go in and what order to go in them.
+    # REF: https://www.reddit.com/r/RenPy/comments/qhibwn/hiding_an_option_after_a_player_has_selected_it/ 
+default ch2charMenu = set()
 label chapter2:
+    $ date += 1 
     '[get_day(date)]' 
+    menu ch2Dates:
+        set ch2charMenu
+        "Who should I go see?"
+        "Sox":
+            jump chapter2a
+        "Neil":
+            jump chapter2b
+        "Z3R0":
+            jump chapter2c
     
 return

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/testspace.rpy", line 9: expected statement.
-    get_day(date)
-                 ^
+File "game/chapter2a.rpy", line 165: expected statement.
+    ch2charMenu.add("Sox")
+                          ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Wed Apr 17 15:07:54 2024
+Thu Apr 18 11:52:09 2024
