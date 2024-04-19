@@ -7,7 +7,6 @@ traceback.txt
 *.save
 
 # Ignore persistent?
-persistent
 
 # Ignore navigation
 navigation.json
