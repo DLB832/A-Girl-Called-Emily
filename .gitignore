@@ -10,3 +10,6 @@ traceback.txt
 
 # Ignore navigation
 navigation.json
+
+# Ignore specific game cache files
+shaders.txt
