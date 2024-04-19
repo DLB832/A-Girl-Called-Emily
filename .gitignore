@@ -12,4 +12,5 @@ traceback.txt
 navigation.json
 
 # Ignore specific game cache files
-shaders.txt
+cache/
+#shaders.txt
