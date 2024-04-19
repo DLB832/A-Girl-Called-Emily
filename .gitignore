@@ -8,6 +8,5 @@ traceback.txt
 
 # Ignore persistent? It's required to run the game so it can't be deleted.
 
-
 # Ignore navigation
 navigation.json
