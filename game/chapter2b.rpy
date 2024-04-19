@@ -1,7 +1,7 @@
 # Chapter 2b title page information:
 # Date with Neil
 # Location: The Pizza Place
-# NPCs Present: varies
+# NPCs Present: Mrs. Camber
 label chapter2b:
     #TODO: show The Pizza Placce
     "You've decided to go see Neil at the Pizza Place after school."

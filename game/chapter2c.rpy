@@ -1,8 +1,8 @@
 # Chapter 2c title page information:
 # Date with Z3R0
     # NOTE: The day of the week is variable based off of the order you go on the dates.
-# Location: The Grind House
-# NPCs Present: varies
+# Location: The Chicago Hardware Store
+# NPCs Present: Harold
 label chapter2c:
     #TODO: show The Hardware Store
     "You've decided to go see Z3R0 at the  Chicago Hardware Store after school."
