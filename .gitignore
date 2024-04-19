@@ -10,6 +10,3 @@ traceback.txt
 
 # Ignore navigation
 navigation.json
-
-# Ignore shaders?
-shaders.txt
