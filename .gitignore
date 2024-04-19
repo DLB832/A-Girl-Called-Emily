@@ -8,6 +8,7 @@ traceback.txt
 
 # Ignore persistent?
 persistent
+persistent.*.tmp
 
 # Ignore navigation
 navigation.json
