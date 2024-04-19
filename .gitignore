@@ -1,0 +1,13 @@
+# Ignore all debugging files
+errors.txt
+log.txt
+traceback.txt
+
+# Ignore all save files
+*.save
+
+# Ignore persistent?
+persistent
+
+# Ignore navigation
+navigation.json
