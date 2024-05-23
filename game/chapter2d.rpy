@@ -4,7 +4,7 @@
 # Location: The Abandoned Arcade
 # NPCs Present: varies
 label chapter2d:
-    "you are finally meeting back up with Emily, and instead of doing work in the newspaper room as you usually do, Emily is surprising you with a 
+    "You are finally meeting back up with Emily, and instead of doing work in the newspaper room as you usually do, Emily is surprising you with a 
         secretive story lead, and taking you on a trip to a suprise location."
     "You are going to the abandoned arcade."
     default arcadePowerOn = False
@@ -210,5 +210,140 @@ label ch2d_016:
     jump ch2d_012a
 
 label ch2d_017:    
+    "The overlapping sounds of title screen music fills the arcade."
+    "Most of the noise is absorbed by the carpeting, which you can now see has not been cleaned since the day it was installed."
+    "The pinball machines glimmer and shine with varying hues on the far wall, all with a vibrancy typically reserved for brand new machinery."
+    
+    emily "Okay I do have to admit, I had no idea this would turn out so cool."
+    emily "We now have more questions than answers... an exciting feeling, don't you think?"
+    
+    menu feelings2d17:
+        "Since we're admitting things, I'm really just happy to be here with you.":
+            $ pc.path1points += 1
+            $ emily.affection += 1
+        "As frustrating as it is, I admit it's an exciting feeling.":
+            $ pc.path2points += 1
+        "Exciting? More like frustrating... Can we skip to the part where you tell me everything you know?":
+            $ pc.path3points += 1
+            $ emily.affection -= 1
+    jump ch2d_018
 
+label ch2d_018:
+    "Emily tilts her head back and laughs whimsically, her shoulders relaxing."
+    emily "How did I KNOW you were going to say that? I feel like I know you better than myself sometimes..."
+    emily "But I digress. It's time to \"dish the deets\", as Neil would say."
+    emily "Why don't you grab us some snacks from the concession stand, and we'll debrief."
+    "The concession stand isn't what it used to be, but it is still a stand with concessions!"
+    "The lights flicker faintly as you approach, illuminating
+    old price signs, and a handful of questionable snack remains that would give a health inspector nightmares. There are, however, still a few non-perishables
+    worth salvaging!"
+
+    menu concessionStand2d18:
+        "What do you gather to bring back to Emily?"
+        "A collection of assorted Dazzles candies catch your eye.":
+            $ concessionChoice = "Dazzles"
+        "Some packs of brightly colored, rainbow Rittles sounds good to you.":
+            $ concessionChoice = "Rittles"
+        "The delicious mounds of finely powdered sugar calls your name. A few packets of Fun Plunge slip into your pockets, and a few more go with you to share with Emily.":
+            $ concessionChoice = "Fun Plunge"
+        "A family size package of red Tizzlers should be plenty for the two of you.":
+            $ concessionChoice = "Tizzlers"
+            $ emily.affection += 1
+    jump ch2d_019
+
+label ch2d_019:
+    "Emily has moved towards the collection of tables near the back door that you had used to get inside. 
+    She looks up as you slide the package of [concessionChoice] toward her on the table."
+    if concessionChoice == "Dazzles":
+        emily "Dazzles? You and Z3R0 really have a lot in common."
+    elif concessionChoice == "Rittles":
+        emily "You know, I always think of Sox when I see these."
+    elif concessionChoice == "Fun Plunge":
+        emily "Sugar coma, here we come! Neil would be proud."
+    else:
+        emily "Oh, these are perfect! I was just craving some of these earlier!"    
+    jump ch2d_020
+
+label ch2d_020:
+    "Snacks secured, you are ready to know what Emily has learned about the old arcade. She pulls out a notebook from her bag, scanning it quickly."
+    emily "Okay, so now already know my earlier research on the building, and how at the time of Shellie's disappearance no one knew she had a brother."
+    emily "At that time, I didn't have the know-how to dig any further. Or rather, Z3R0 didn't. But with the recent movement from Demarcus on trying to get the building, we tried again."
+    emily "Z3R0 found Shellie's brother from California, and he did die in a car accident, but it was 12 years ago!!! Before she even arrived in Cape Bay!"
+    
+    "While Emily kept her tone and body language as professional as possible, she could not hide the girlish glee in her eyes."
+    
+    emily "So either Ms. Diedeme lied about her sibling and is out there somewhere, having abandoned her precious arcade to the ravages of time and vacancy, or she did not write that note."
+    emily "Those machines were her life, and she loved the arcade kids like family. You never got to meet her, but believe me when I say that woman would have rather died than leave this store."
+    emily "Unfortunately, I think that may in fact be the case."
+    
+    "Your eyes widen - died?! Hold on, you thought we were investigating a potential squatter?"
+    
+    emily "Before we jump to any conclusions, I'm unsure if Shellie's demise is related to whoever is attempting to get control of this building. But after looking around here, I'm quite sure there is no squatter of 5 years hanging out in the back room."
+    emily "Demarcus must be making some quasi-legal claim to ownership since his law office is attached to the building and he pays for the plumbing still. That bozo can't afford to fix his 1-800-DIWORCE back to \"DIVORCE,\" so I'm sure he's looking for an easy cash grab."
+    
+    "You nod in agreement. Your limited interactions with Mr. Demarcus Dillon involved helping peel him off of the bar at Pepper's after a particularly rowdy $1 tequila night when you happened to be leaving at the right moment."
+    "Oh, and a run-in at Snortbucks when he thought they had gotten his order wrong but he had really just grabbed yours."
+    
+    emily "All of this would be interesting in and of itself, but something has…changed recently."
+    "Emily's glee never falters as she looks at you, eyes full of intensity and excitement."
+    jump ch2d_021
+
+label ch2d_021:
+    emily "Someone has THREATENED me! ME!"
+    emily "I found a note in my library book a week ago, threatening my family, threatening Sox, Neil, and Z3R0! There were so many details in the note, so much information about me that I've only told to a few people..."
+    emily "[pc.name], I think I'm being stalked!"
+   
+    "You can't help but look around the room now, concerned immediately for her safety."
+    
+    menu happyQuestion2d21:
+        "But wait, why did she seem so damn happy?"
+        "Why do I get the feeling you're happy about this?":
+            jump ch2d_022
+        "Please tell me you're not happy about this...":
+            jump ch2d_022
+
+label ch2d_022:
+    emily "Happy about it? I feel invigorated, alive! Nothing ever happens in this damn town, but now this? I'll be honest, at first I thought it was you who had sent the note. 
+            You do keep such a...keen eye on me."
+    menu questions2d22:
+        "Wait, is that why you invited me to Pepper's? And to spend time with your friends? That's messed up!":
+            $ pc.path1points += 1
+        "So you set a trap this week, and used your friends to interview me? Clever, if not a little messed up.":
+            $ pc.path2points += 2
+        "What's that supposed to mean?! You're the one that's been weird here, not me!":
+            $ pc.path3points += 3
+    jump ch2d_023
+
+label ch2d_023:
+    emily "While that may be true, I stand by my methods. I needed to know if I could trust you."
+    emily "I was hoping it wasn't you, of course!
+        I'd much rather have you in my corner than against me. Although...no...sorry!"
+    
+    "A brief flush is on Emily's cheeks, but gone again in a flash. Was she... flirting? After accusing you of writing cryptic letters?"
+
+    emily "Anyway, that's about the gist of it. I'm of the opinion that this arcade has a lot more secrets to share, especially now knowing someone is paying the power bill."
+    emily "After a little more research, I intend on printing everything in the school paper tomorrow. The article is already done, I just have time for a few more edits depending on what I find here."
+    menu paperPrinting2d23:
+        "Printing your findings after being threatened? You can't be serious!":
+            $ emily.affection += 0
+        "Printing your evidence to shake the tree and see what comes out? Pretty dangerous... are you serious?":
+            $ emily.affection += 1
+    jump ch2d_024
+
+label ch2d_024:
+    emily "Deadly serious, if you'll excuse the pun."
+    emily "I want to see what this mystery writer does, because based on their letter and what I'm finding through my research, I think I'm starting to get the big picture."
+
+    "At this moment, your phone starts buzzing. Mom is looking for you, wondering if you'll be home for dinner soon."
+
+    emily "Well, I guess that's our cue, huh? Come on cutie, I'll drop you off. Don't want to cause you any more trouble than I already have, ya know?"
+
+    "With a wink, Emily moves away from the table. As she pulls her open notebook into her bag, you catch the very top of the page: 0483 - 3840"
+    "As you push back from the table to join her, your eyes can't help but follow Emily."
+    "She goes into the \"Employees Only\" room and cuts the generator, dumping the room back into darkness speckled with neon shapes."
+    "She remerges with the flashlight on, a grin on her face."
+
+    emily "Ready?"
+
+# NOTE: End of Chapter 2
 return
